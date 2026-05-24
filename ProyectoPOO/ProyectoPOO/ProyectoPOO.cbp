@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProyectoPOO" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProyectoPOO" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="include/Zonas" />
+					<Add directory="include/ElementosInteractivos" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProyectoPOO" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/ElementosInteractivos/animalherido.h" />
+		<Unit filename="include/ElementosInteractivos/estacionenergia.h" />
+		<Unit filename="include/ElementosInteractivos/plantamedicinal.h" />
+		<Unit filename="include/ElementosInteractivos/portaltp.h" />
+		<Unit filename="include/ElementosInteractivos/residuocontaminante.h" />
+		<Unit filename="include/Zonas/bosquehumedo.h" />
+		<Unit filename="include/Zonas/centrorecoanimal.h" />
+		<Unit filename="include/Zonas/labambiental.h" />
+		<Unit filename="include/Zonas/riocontaminado.h" />
+		<Unit filename="include/Zonas/senderomontañoso.h" />
+		<Unit filename="include/Zonas/vivero.h" />
+		<Unit filename="include/ecomision.h" />
+		<Unit filename="include/elementointeractivo.h" />
+		<Unit filename="include/explorador.h" />
+		<Unit filename="include/reserva.h" />
+		<Unit filename="include/zona.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/ElementosInteractivos/animalherido.cpp" />
+		<Unit filename="src/ElementosInteractivos/estacionenergia.cpp" />
+		<Unit filename="src/ElementosInteractivos/plantamedicinal.cpp" />
+		<Unit filename="src/ElementosInteractivos/portaltp.cpp" />
+		<Unit filename="src/ElementosInteractivos/residuocontaminante.cpp" />
+		<Unit filename="src/Zonas/bosquehumedo.cpp" />
+		<Unit filename="src/Zonas/centrorecoanimal.cpp" />
+		<Unit filename="src/Zonas/labambiental.cpp" />
+		<Unit filename="src/Zonas/riocontaminado.cpp" />
+		<Unit filename="src/Zonas/senderomontañoso.cpp" />
+		<Unit filename="src/Zonas/vivero.cpp" />
+		<Unit filename="src/ecomision.cpp" />
+		<Unit filename="src/elementointeractivo.cpp" />
+		<Unit filename="src/explorador.cpp" />
+		<Unit filename="src/reserva.cpp" />
+		<Unit filename="src/zona.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
