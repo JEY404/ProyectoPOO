@@ -17,6 +17,7 @@ public:
     void recuperarEnergia(int cantidad);
     void agregarPuntos(int puntos);
     void mostrarEstado();
+    std::string getNombre();
     Zona* getZonaActual();
 };
 

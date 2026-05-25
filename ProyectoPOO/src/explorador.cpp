@@ -37,6 +37,10 @@ void Explorador::mostrarEstado() {
     }
 }
 
+std::string Explorador::getNombre() {
+    return nombre;
+}
+
 Zona* Explorador::getZonaActual() {
     return zonaActual;
 

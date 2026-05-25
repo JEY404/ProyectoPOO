@@ -19,7 +19,7 @@ void Zona::agregarElemento(ElementoInteractivo* elemento) {
 
 void Zona::mostrarElementos() {
     for (int i = 0; i < elementos.size(); i++) {
-        std::cout << i << " - " << elementos[i]->getNombre() << '\n';
+        std::cout << (i + 1) << ". " << elementos[i]->getNombre() << std::endl;
     }
 }
 

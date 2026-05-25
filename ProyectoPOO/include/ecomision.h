@@ -19,6 +19,10 @@ public:
     void asignarZonaInicial();
     void mostrarInformacion();
     void pruebaSistema();
+    int seleccionarExplorador();
+    int cantidadExploradores();
+    Explorador* getExplorador(int idx);
+
 };
 
 #endif
