@@ -1,16 +1,16 @@
-#include <iostream>
 #include <string>
 #include "include/ecomision.h"
+#include <iostream>
 
 void mostrarMenu() {
-    std::cout << "\n                 MENU               \n";
-    std::cout << "1. Mostrar las zonas de la reserva\n";
-    std::cout << "2. Mostrar los exploradores\n";
-    std::cout << "3. Interactuar con un objeto de la zona\n";
-    std::cout << "4. Reporte de exploradores y destinos disponibles\n";
-    std::cout << "5. Crear un nuevo explorador\n";
-    std::cout << "0. Salir del programa\n";
-    std::cout << "-------------------------------------------\n";
+    std::cout << "                 MENU" << std::endl;
+    std::cout << "1. Mostrar las zonas de la reserva"<< std::endl;
+    std::cout << "2. Mostrar los exploradores" << std::endl;
+    std::cout << "3. Interactuar con un objeto de la zona" << std::endl;
+    std::cout << "4. Reporte de exploradores y destinos disponibles" << std::endl;
+    std::cout << "5. Crear un nuevo explorador" << std::endl;
+    std::cout << "0. Salir del programa" << std::endl;
+    std::cout << "-------------------------------------------" << std::endl;
     std::cout << "Seleccione una opcion: ";
 }
 
@@ -30,7 +30,7 @@ int main() {
             continue;
         }
 
-        std::cout << "\n----------------------------------------------------\n";
+        std::cout << "----------------------------------------------------" << std::endl;
 
         switch (opcion) {
             case 1:
@@ -45,7 +45,7 @@ int main() {
                     Explorador* exp = experienciaInteractiva->getExplorador(idx);
                     Zona* z = exp->getZonaActual();
 
-                    std::cout << "Elementos disponibles:\n";
+                    std::cout << "Elementos disponibles:" << std::endl;
                     z->mostrarElementos();
 
                     std::cout << "\nDesea ingresar?\n1. Por número\n2. Por nombre\nOpcion: ";
@@ -64,13 +64,13 @@ int main() {
                         std::getline(std::cin, nombre);
                         z->interactuarConElemento(nombre, exp);
                     } else {
-                        std::cout << "Opción incorrecta, parce\n";
+                        std::cout << "Opción incorrecta, parce" << std::endl;
                     }
                 }
                 break;
             }
             case 4: {
-                std::cout << "\n Reporte de Exploradores y Destinos \n";
+                std::cout << "Reporte de Exploradores y Destinos " << std::endl;
                 for (int i = 0; i < experienciaInteractiva->cantidadExploradores(); i++) {
                     Explorador* exp = experienciaInteractiva->getExplorador(i);
                     Zona* z = exp->getZonaActual();
@@ -78,7 +78,7 @@ int main() {
                               << " está en: " << z->getNombre() << "\n";
                     std::cout << "Elementos/Destinos en esta zona:\n";
                     z->mostrarElementos();
-                    std::cout << "\n----------------------------------------------------\n";
+                    std::cout << "----------------------------------------------------" << std::endl;
                 }
                 break;
             }
@@ -91,7 +91,7 @@ int main() {
                 break;
             }
             case 0:
-                std::cout << "Saliendo...\n";
+                std::cout << "Saliendo.";
                 break;
             default:
                 std::cout << "Opcion invalida.\n";
